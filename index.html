@@ -719,19 +719,18 @@
           <div class="term-dot r"></div>
           <div class="term-dot y"></div>
           <div class="term-dot g"></div>
-          <div class="term-title">db-sentinel — backup.py</div>
+          <div class="term-title">dc-ops — server-health.sh</div>
         </div>
         <div class="term-body">
-<span class="term-prompt">$</span> <span class="term-cmd">python -m db_sentinel.backup --config prod.yaml --verify</span><br/>
+<span class="term-prompt">$</span> <span class="term-cmd">bash server-health.sh --rack A14 --full-report</span><br/>
 <br/>
-<span class="term-out">2026-07-08 06:00:01</span> <span class="term-ok">INFO</span>  <span class="term-out">[prod_postgres] Starting backup</span><br/>
-<span class="term-out">2026-07-08 06:00:14</span> <span class="term-ok">INFO</span>  <span class="term-out">Backup complete: 847.3 MB in 13.2s</span><br/>
-<span class="term-out">2026-07-08 06:00:14</span> <span class="term-ok">INFO</span>  <span class="term-out">Starting restore verification...</span><br/>
-<span class="term-out">2026-07-08 06:01:09</span> <span class="term-ok">INFO</span>  <span class="term-out">✓ table_count: 47 tables</span><br/>
-<span class="term-out">2026-07-08 06:01:09</span> <span class="term-ok">INFO</span>  <span class="term-out">✓ row counts verified</span><br/>
-<span class="term-out">2026-07-08 06:01:09</span> <span class="term-ok">INFO</span>  <span class="term-out">✓ sequences intact</span><br/>
-<span class="term-out">2026-07-08 06:01:09</span> <span class="term-ok">INFO</span>  <span class="term-out">Retention: removed 2 backups (>14 days)</span><br/>
-<span class="term-out">2026-07-08 06:01:10</span> <span class="term-ok">INFO</span>  <span class="term-out">AUDIT | backup | prod_postgres |</span> <span class="term-ok">success</span> <span class="term-out">| 69.1s</span><br/>
+<span class="term-out">2026-07-08 07:00:01</span> <span class="term-ok">INFO</span>  <span class="term-out">[A14] Scanning 12 nodes...</span><br/>
+<span class="term-out">2026-07-08 07:00:03</span> <span class="term-ok">OK</span>    <span class="term-out">CPU temps: 38–44°C ✓</span><br/>
+<span class="term-out">2026-07-08 07:00:04</span> <span class="term-ok">OK</span>    <span class="term-out">PDU load: 14.2 kW / 20 kW ✓</span><br/>
+<span class="term-out">2026-07-08 07:00:05</span> <span class="term-warn">WARN</span>  <span class="term-out">node-09: Fan #3 degraded → swap queued</span><br/>
+<span class="term-out">2026-07-08 07:00:06</span> <span class="term-ok">OK</span>    <span class="term-out">Fiber links: 24/24 passing OTDR ✓</span><br/>
+<span class="term-out">2026-07-08 07:00:08</span> <span class="term-ok">INFO</span>  <span class="term-out">INC0045821 opened → ServiceNow ✓</span><br/>
+<span class="term-out">2026-07-08 07:00:09</span> <span class="term-ok">INFO</span>  <span class="term-out">SLA: 98.5% · 12 SOPs current ✓</span><br/>
 <br/>
 <span class="term-prompt">$</span> <span class="cursor"></span>
         </div>
